@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Unemployment-Analysis",
+    "description": "I conducted an Unemployment Analysis project where I utilized data science techniques to analyze trends and key factors affecting unemployment. The project involved data collection, cleaning, and exploratory data analysis (EDA). I developed predictive models to forecast future unemployment rates and visualized the results through interactive charts.",
+    "technologies": "pandas, Numpy, Matplotlib, Seaborn, scikit-learn, Jupyter Notebook and Power BI",
+    "image": "unemployment",
+    "githubLink": "https://github.com/SrigadaAkshayKumar/Unemployment-Analysis"
+  },
+  {
+    "title": "RetailX-Sales-Analysis",
+    "description": "The RetailX Sales Analysis project offers insights into retail sales data. Through data analysis and visualization, it explores sales performance, customer behavior, and trends. This project showcases my journey in understanding and applying analytics techniques to real-world datasets.",
+    "technologies": "pandas, Numpy, Matplotlib, Seaborn, scikit-learn, Jupyter Notebook and Power BI",
+    "image": "Retail",
+    "githubLink": "https://github.com/Akshayak8/RetailX-Sales-Analysis.git"
+  },
+  {
+    "title": "Netflix-Clone",
+    "description": "To discover the world of React development with my first project Netflix clone built entirely with React.js. Dive into the frontend development journey as I recreate the user interface of the popular streaming platform.",
+    "technologies": "React js, HTML, CSS, JavaScript, Node js and VS Code",
+    "image": "Netflix",
+    "githubLink": "https://github.com/Akshayak8/Netflix-Clone.git"
+  },
+  {
+    "title": "Rent-Hub",
+    "description": "I have developed Rent-Hub, a one-stop platform for all your rental needs. Browse, compare, and choose platform. Simplify your rental experience with Rent-Hub.",
+    "technologies": "React js, HTML, CSS, JavaScript, Bootstrap, Node js and VS Code",
+    "image": "Rent",
+    "githubLink": "https://github.com/Akshayak8/Rent-Hub.git"
+  },
+  {
+    "title": "Food Ordering website",
+    "description": "I independently developed an online food ordering webpage. The project involved creating a user-friendly interface for customers. I implemented responsive design principles to ensure viewing across different devices.",
+    "technologies": "HTML, CSS, JavaScript and VS Code",
+    "image": "Food",
+    "githubLink": "https://github.com/Akshayak8/Online-food-Ordering-web"
+  }
+]
