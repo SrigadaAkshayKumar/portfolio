@@ -15,6 +15,7 @@ import {
   faGraduationCap,
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
+import Blog from "./components/Blog";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ function App() {
               <div className={`menu1 ${menuOpen ? "open" : ""}`}>
                 <div className="home" onClick={handleLinkClick}>
                   <FontAwesomeIcon icon={faPen} />
-                  <Link to="/About">Blog</Link>
+                  <Link to="/Blog">Blogs</Link>
                 </div>
                 <div className="home" onClick={handleLinkClick}>
                   <FontAwesomeIcon icon={faLightbulb} />
@@ -67,7 +68,7 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<About />} />
-            <Route path="/About" element={<About />} />
+            <Route path="/Blog" element={<Blog />} />
             <Route path="/Skills" element={<Skills />} />
             <Route path="/Experience" element={<Experience />} />
             <Route path="/Projects" element={<Projects />} />
@@ -78,7 +79,7 @@ function App() {
         {/* Bottom navigation links */}
         <div className="bottom-box">
           <div className="hom">
-            <Link to="/About">Blog</Link>
+            <Link to="/Blog">Blogs</Link>
           </div>
           <div className="hom">
             <Link to="/Skills">Skills</Link>

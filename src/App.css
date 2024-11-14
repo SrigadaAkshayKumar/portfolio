@@ -297,6 +297,83 @@ body {
 .icon i {
   padding-right: 50px;
 }
+/* Blog.jsx */
+
+.blog-section {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.blog-thumbnail {
+  width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.title_thumbnail h1 {
+  padding: 15px 0;
+}
+.blog-post h3 {
+  font-size: 1.5em;
+}
+.date_dis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+.publish-date {
+  padding: 10px 0;
+  font-size: 1.5em;
+  color: #000000;
+}
+.readmore {
+  padding: 10px 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  font-size: 1.4em;
+  color: #000000;
+}
+
+.read-more-btn {
+  padding: 8px 12px;
+  background-color: #077b12fe;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.read-more-btn:hover {
+  background-color: #33c542fe;
+}
+.share-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding-top: 10px;
+}
+.share-btn svg {
+  font-size: 2rem;
+  color: #181818;
+}
+
+/* Skill.jsx */
 .skill-heading {
   color: rgb(0, 0, 0);
   font-size: 2.2rem;
@@ -622,6 +699,15 @@ body {
   .Address {
     width: 95%;
   }
+  .date_dis {
+    width: 85%;
+  }
+  .blog-thumbnail {
+    width: 320px;
+  }
+  .title_thumbnail {
+    font-size: 1rem;
+  }
   .soft-skills {
     width: 90%;
   }
@@ -840,6 +926,15 @@ body {
   .hom {
     font-size: 1.2rem;
     padding: 8px 20px;
+  }
+  .date_dis {
+    width: 90%;
+  }
+  .blog-thumbnail {
+    width: 300px;
+  }
+  .title_thumbnail {
+    font-size: 0.8rem;
   }
   .skills h1 {
     font-size: 2rem;
