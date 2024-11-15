@@ -18,8 +18,8 @@ body {
 }
 .bottom-box {
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
+  justify-content: space-evenly;
+  margin: 40px 100px;
 }
 .nav {
   height: 90px;
@@ -78,7 +78,6 @@ body {
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
-  padding-right: 20px;
 }
 .hom a:hover {
   text-decoration: underline;
@@ -867,6 +866,12 @@ body {
     width: 95%;
   }
 }
+
+@media (max-width: 395px) {
+  .certifi-btn h1 {
+    font-size: 1.3rem;
+  }
+}
 @media (max-width: 360px) {
   .About {
     padding: 0 10px;
@@ -927,8 +932,14 @@ body {
     font-size: 1.2rem;
     padding: 8px 20px;
   }
+  .publish-date {
+    font-size: 1.3rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
   .date_dis {
-    width: 90%;
+    width: 92%;
   }
   .blog-thumbnail {
     width: 300px;
