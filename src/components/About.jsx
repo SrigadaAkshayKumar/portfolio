@@ -53,24 +53,14 @@ function About() {
           </p>
           <p>Year : I am currently in my third year of studying engineering</p>
           <p>CGPA : 8.7</p>
-          <h2>certificate</h2>
-          <a href="#">2nd year memo</a>
           <h3>Intermediate (12th Grade)</h3>
           <p>junior college, mallampet, Hyderabad, Telangana, 500090 </p>
           <p>Year of Completion : 2022</p>
           <p>Marks : 950 (95%)</p>
-          <h2>certificate</h2>
-          <a href="https://drive.google.com/file/d/1TJ_WJcTQ0hiz77dija4fC8App2-9oWKM/view?usp=sharing">
-            12th Memo
-          </a>
           <h3>High School</h3>
           <p>Abhyudaya Patashala, Domakonda, kamareddy, Telangana, 503123 </p>
           <p>Year of Completion : 2020</p>
           <p> CGPA : 10</p>
-          <h2>certificate</h2>
-          <a href="https://drive.google.com/file/d/1v3Eenre9vcuhmMMHTlhcdZRKpuQJXt_P/view?usp=sharing">
-            10th Memo
-          </a>
         </div>
       </div>
       <div className="lang-hobbies">
