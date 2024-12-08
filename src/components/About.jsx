@@ -1,7 +1,7 @@
 import React from "react";
 import profile from "./images/profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, fab } from "@fortawesome/free-brands-svg-icons";
 import {
   faLocationDot,
   faPhone,
@@ -32,6 +32,19 @@ function About() {
             </a>
             <a href="https://github.com/SrigadaAkshayKumar">
               <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a
+              href="https://leetcode.com/u/akshay_ak8/"
+              style={{ textDecoration: "none" }}
+            >
+              <span
+                style={{
+                  fontSize: "3rem",
+                  fontWeight: "bold",
+                }}
+              >
+                L
+              </span>
             </a>
           </div>
         </div>

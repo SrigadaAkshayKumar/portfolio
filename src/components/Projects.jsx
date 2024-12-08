@@ -5,6 +5,8 @@ import Retail from "./images/RetailX.png";
 import Netflix from "./images/Netflix.png";
 import Rent from "./images/Rent.png";
 import Food from "./images/Food-order.png";
+import cricket from "./images/cricket.png";
+import result from "./images/result.png";
 
 const images = {
   unemployment,
@@ -12,6 +14,8 @@ const images = {
   Netflix,
   Rent,
   Food,
+  cricket,
+  result,
 };
 
 function Projects() {

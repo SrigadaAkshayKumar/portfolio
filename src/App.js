@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
+import ScrollToTop from "./components/ScrollToTop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPen,
@@ -25,7 +26,8 @@ function App() {
   };
 
   return (
-    <Router basename="/">
+    <Router>
+      <ScrollToTop />
       <div className="content">
         <header className="header">
           <nav className="nav">

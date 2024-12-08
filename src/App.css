@@ -311,7 +311,7 @@ body {
   padding: 10px 0;
 }
 
-.blog-thumbnail {
+.title_thumbnail {
   width: 400px;
   height: auto;
   margin-bottom: 10px;
@@ -319,6 +319,10 @@ body {
 
 .title_thumbnail h1 {
   padding: 15px 0;
+}
+.title_thumbnail img {
+  width: 100%;
+  height: auto;
 }
 .blog-post h3 {
   font-size: 1.5em;

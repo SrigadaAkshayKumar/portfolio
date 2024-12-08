@@ -4,5 +4,17 @@
     "description": "Developed a personalized chatbot leveraging ChatGPT 4.0 during a hackathon. The chatbot is designed to provide tailored responses based on user inputs, demonstrating advanced natural language understanding and adaptability to various conversational contexts. It showcases the ability to engage users interactively and efficiently, making it suitable for customer support, personal assistance, and more.",
     "technologies": "ChatGPT 4.0",
     "image": "Hackathon1"
+  },
+  {
+    "title": "Achieved Elite Badge in NPTEL Exam for 'Python for Data Science' Course",
+    "description": "Successfully completed the NPTEL certification course with an elite badge. This government-recognized program by IITs focuses on equipping industry-relevant skills. The course covered Python programming essentials, data analysis techniques, data visualization, machine learning basics, and working with libraries like NumPy and Pandas. By achieving this milestone, I showcased my ability to solve real-world data problems.",
+    "technologies": "Python, Data Science, NumPy, Pandas",
+    "image": "nptel"
+  },
+  {
+    "title": "Recognized for Work in Data Analysis Hackathon by GrowthSchool",
+    "description": "Participated in a data analysis hackathon organized by GrowthSchool, where I received recognition for effectively addressing their problem statement. Demonstrated strong analytical skills by leveraging data-driven insights to propose actionable solutions. This achievement highlights my ability to understand complex challenges, apply data analysis techniques, and deliver impactful results under competitive conditions.",
+    "technologies": "Data Analysis, Python, Excel, Power BI",
+    "image": "Hackathon2"
   }
 ]
