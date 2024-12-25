@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import videoSrc from "./images/background.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 
@@ -58,6 +59,10 @@ function Blog() {
 
   return (
     <div className="blog-section">
+      <video autoPlay loop muted className="background-video">
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       {posts.length > 0 ? (
         posts.map((post) => {
           const thumbnail = extractThumbnail(post.description); // Extract thumbnail from description
@@ -68,11 +73,11 @@ function Blog() {
             <div key={postId} className="blog-post">
               <div className="title_thumbnail">
                 {/* Blog Title and Link */}
-                <h1>
+                <h2>
                   <a href={post.link} target="_blank" rel="noopener noreferrer">
                     {post.title}
                   </a>
-                </h1>
+                </h2>
 
                 {/* Blog Thumbnail */}
                 {thumbnail && (

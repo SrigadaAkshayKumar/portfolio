@@ -1,3 +1,16 @@
+:root {
+  --color-primary: rgb(240, 231, 231);
+  --color-secondary: rgb(247, 240, 240);
+  --color-background: rgba(250, 249, 246, 1);
+  --color-hover: rgb(255, 255, 255);
+  --color-hamburger-bg: rgb(153, 140, 140);
+  --color-nav-bg: rgb(159, 149, 149);
+  --color-read-more-bg: #077b12fe;
+  --color-read-more-hover: #33c542fe;
+  --color-share-icon: #f8f2f2;
+  --color-text: rgba(0, 0, 0);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -24,12 +37,12 @@ body {
 .nav {
   height: 90px;
   width: 90%;
-  background-color: rgb(159, 149, 149);
+  /* background-color: rgb(159, 149, 149); */
   backdrop-filter: blur(60px) saturation(20%);
-  position: fixed;
+  position: absolute;
   border-radius: 25px;
   z-index: 2;
-  border: 2px solid rgb(0, 0, 0);
+  /* border: 2px solid var(--color-secondary); */
 }
 
 .navbar {
@@ -39,7 +52,7 @@ body {
 }
 
 .head {
-  color: rgb(30, 28, 28);
+  color: var(--color-primary);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -52,7 +65,7 @@ body {
 }
 .head svg {
   font-size: 4.5rem;
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
 }
 .menu1 {
   display: flex;
@@ -62,7 +75,7 @@ body {
   padding-top: 10px;
 }
 .home a {
-  color: rgb(30, 28, 28);
+  color: var(--color-primary);
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.8rem;
@@ -74,7 +87,7 @@ body {
   transition: all 0.99s ease-in-out;
 }
 .hom a {
-  color: rgb(30, 28, 28);
+  color: var(--color-primary);
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
@@ -84,7 +97,7 @@ body {
   transition: all 0.99s ease-in-out;
 }
 .hom a {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
 }
 /* Hamburger styles */
 .hamburger {
@@ -94,13 +107,30 @@ body {
 
 .hamburger i {
   font-size: 24px;
-  color: rgb(30, 28, 28);
+  color: var(--color-primary);
 }
 .content {
-  background-color: rgba(250, 249, 246, 1);
   width: 100%;
   height: 100%;
 }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .About {
   height: 100%;
   display: flex;
@@ -118,7 +148,7 @@ body {
   height: 100%;
 }
 .parap {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   width: 96%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -159,7 +189,7 @@ body {
   font-size: 3rem;
 }
 .icon1 a {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
 }
 .icon1 i {
   padding-right: 50px;
@@ -176,13 +206,13 @@ body {
   padding: 7px 15px;
   margin: 40px 0;
   cursor: pointer;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  border: 2px solid var(--color-secondary);
+  background-color: var(--color-hove);
+  color: var(--color-secondary);
 }
 .resume a:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: var(--color-secondary);
+  color: var(--color-hove);
   border: 2px solid white;
   transition-duration: 0.3s;
 }
@@ -195,7 +225,7 @@ body {
   padding: 0 50px;
   padding-bottom: 100px;
   line-height: 1.2;
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .education h1 {
@@ -226,13 +256,13 @@ body {
   font-size: 1.5rem;
   border-radius: 10px;
   padding: 10px 40px;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  border: 2px solid var(--color-secondary);
+  background-color: var(--color-hove);
+  color: var(--color-secondary);
 }
 .education a:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: var(--color-secondary);
+  color: var(--color-hove);
   border: 2px solid white;
   transition-duration: 0.3s;
 }
@@ -244,7 +274,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 0 40px;
@@ -253,7 +283,7 @@ body {
   font-size: 2rem;
 }
 .Details {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   display: flex;
   justify-content: center;
   font-size: 1.8rem;
@@ -266,7 +296,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   padding: 0 50px;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -283,7 +313,7 @@ body {
 .icon {
   display: flex;
   justify-content: space-evenly;
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -291,7 +321,7 @@ body {
   font-size: 3rem;
 }
 .icon a {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
 }
 .icon i {
   padding-right: 50px;
@@ -317,8 +347,17 @@ body {
   margin-bottom: 10px;
 }
 
-.title_thumbnail h1 {
+.title_thumbnail h2 {
   padding: 15px 0;
+  font-size: 1.8rem;
+}
+.title_thumbnail h2 a {
+  text-decoration: none;
+  color: var(--color-read-more-hover);
+}
+.title_thumbnail h2 a:hover {
+  text-decoration: underline;
+  color: var(--color-read-more-bg);
 }
 .title_thumbnail img {
   width: 100%;
@@ -332,11 +371,11 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 60%;
+  color: var(--color-secondary);
 }
 .publish-date {
   padding: 10px 0;
   font-size: 1.5em;
-  color: #000000;
 }
 .readmore {
   padding: 10px 0;
@@ -348,12 +387,11 @@ body {
 
 .description {
   font-size: 1.4em;
-  color: #000000;
 }
 
 .read-more-btn {
   padding: 8px 12px;
-  background-color: #077b12fe;
+  background-color: var(--color-read-more-bg);
   color: white;
   border: none;
   cursor: pointer;
@@ -373,12 +411,12 @@ body {
 }
 .share-btn svg {
   font-size: 2rem;
-  color: #181818;
+  color: var(--color-share-icon);
 }
 
 /* Skill.jsx */
 .skill-heading {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   font-size: 2.2rem;
   text-decoration: underline;
   text-align: center;
@@ -395,7 +433,7 @@ body {
   padding: 0 20px;
 }
 .tech-skills {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   font-size: 1.5rem;
   line-height: 2;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -411,7 +449,7 @@ body {
   line-height: 1.8;
 }
 .soft-skills {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   padding-top: 8px;
   font-size: 1.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -421,7 +459,7 @@ body {
   line-height: 2;
 }
 .certificate {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -432,6 +470,7 @@ body {
   text-decoration: underline;
 }
 .certifi {
+  color: var(--color-secondary);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -448,14 +487,15 @@ body {
 }
 .certifi-btn a {
   text-decoration: none;
+  color: var(--color-read-more-hover);
   font-size: 1.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .certifi-btn a:hover {
-  text-decoration: underline;
+  color: var(--color-read-more-bg);
 }
 .experience {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   display: flex;
   justify-content: center;
   font-size: 1.8rem;
@@ -465,7 +505,7 @@ body {
   text-decoration: underline;
 }
 .experience1 {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -487,18 +527,17 @@ body {
   border-radius: 10px;
   padding: 7px 10px;
   margin: 40px 0;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
 }
 .experience1 a:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  border: 2px solid white;
+  background-color: var(--color-secondary);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   transition-duration: 0.3s;
 }
 .projects {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,7 +548,7 @@ body {
   text-decoration: underline;
 }
 .project1 {
-  color: rgb(0, 0, 0);
+  color: var(--color-secondary);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -522,22 +561,31 @@ body {
   justify-content: center;
   margin: 30px 30px;
   padding: 30px;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 2px solid var(--color-secondary);
+  background-color: var(--color-hove);
   height: 100%;
   width: 100%;
 }
 .project:hover {
-  box-shadow: 0 0 40px 10px rgb(0, 0, 0);
+  box-shadow: 0 0 40px 10px var(--color-secondary);
 }
 .project img {
   height: 80%;
   width: 80%;
 }
 .project h2 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 20px 0;
+}
+.project h2 a {
+  text-decoration: none;
+  color: var(--color-read-more-hover);
+}
+.project h2 a:hover {
+  text-decoration: underline;
+  color: var(--color-read-more-bg);
 }
 .project h3 {
   font-size: 2rem;
@@ -571,26 +619,34 @@ body {
   .menu1 {
     display: none;
     flex-direction: column;
-    width: 100%;
-    background-color: rgb(153, 140, 140);
+    width: 97%;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+    backdrop-filter: blur(10px); /* Apply blur */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
     position: absolute;
     top: 85px;
     left: 0;
     z-index: 1;
-    border-radius: 15px 15px 20px 20px;
+    border-radius: 10px; /* Rounded corners */
     padding: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Frosted border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
 
   .menu1.open {
     display: flex;
+    padding: 5px;
   }
 
   .menu1 .home {
     margin: 10px 0;
+    padding: 5px 15px;
     text-align: center;
+    border-radius: 5px;
   }
 
   .hamburger {
+    color: var(--color-secondary);
     display: block;
     margin-right: 30px;
     margin-top: 10px;
@@ -600,9 +656,10 @@ body {
     font-size: 1.5rem;
   }
   .home a {
-    color: rgb(30, 28, 28);
+    color: var(--color-text);
     text-decoration: none;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
     font-size: 1.8rem;
     padding-right: 20px;
   }
@@ -641,12 +698,11 @@ body {
     margin: 20px 0;
   }
   .hom {
-    background-color: rgb(153, 140, 140);
-    border: 2px solid rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
     margin: 10px 0;
     padding: 10px 30px;
-    border-radius: 10px;
+    border-radius: 8px;
   }
   .hom link {
     text-decoration: none;
@@ -877,6 +933,9 @@ body {
   }
 }
 @media (max-width: 360px) {
+  .header {
+    height: 120px;
+  }
   .About {
     padding: 0 10px;
   }
@@ -908,6 +967,9 @@ body {
   .edu h2 {
     font-size: 1.5rem;
   }
+  .resume a {
+    margin: 20px 0;
+  }
   .language h1 {
     font-size: 1.5rem;
   }
@@ -933,17 +995,25 @@ body {
     font-size: 1.2rem;
   }
   .hom {
+    padding: 5px 25px;
+  }
+  .hom a {
     font-size: 1.2rem;
-    padding: 8px 20px;
+  }
+  .blog-section {
+    padding: 5px 20px;
   }
   .publish-date {
     font-size: 1.3rem;
   }
   .description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .title_thumbnail h2 {
+    font-size: 1.7rem;
   }
   .date_dis {
-    width: 92%;
+    width: 100%;
   }
   .blog-thumbnail {
     width: 300px;
@@ -978,18 +1048,22 @@ body {
   }
   .certifi-btn {
     line-height: 1.5;
+    padding: 0;
   }
   .certifi-btn h1 {
     font-size: 1.2rem;
   }
-  .projects {
-    font-size: 1.8rem;
+  .project1 {
+    padding: 0 15px;
   }
-  .project h2 {
+  .projects {
     font-size: 1.5rem;
   }
+  .project h2 {
+    font-size: 1.3rem;
+  }
   .project p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .project h3 {
     font-size: 1.2rem;

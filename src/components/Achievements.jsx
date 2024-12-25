@@ -3,6 +3,7 @@ import achievementsData from "./achievementsData.json";
 import Hackathon1 from "./images/Hackathon1.jpg";
 import Hackathon2 from "./images/Hackathon2.png";
 import nptel from "./images/Nptel.png";
+import videoSrc from "./images/background.mp4";
 
 const images = {
   Hackathon1,
@@ -13,6 +14,10 @@ const images = {
 function Achievements() {
   return (
     <div>
+      <video autoPlay loop muted className="background-video">
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="project1">
         {achievementsData.map((achievement, index) => (
           <div className="project" key={index}>

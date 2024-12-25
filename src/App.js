@@ -28,6 +28,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      {/* Overlay content */}
       <div className="content">
         <header className="header">
           <nav className="nav">

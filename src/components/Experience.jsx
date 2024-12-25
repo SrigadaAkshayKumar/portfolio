@@ -1,8 +1,13 @@
 import React from "react";
+import videoSrc from "./images/background.mp4";
 
 function Experience() {
   return (
     <div>
+      <video autoPlay loop muted className="background-video">
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div class="experience">
         <h1>Experience</h1>
       </div>

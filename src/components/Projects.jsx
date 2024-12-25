@@ -1,4 +1,5 @@
 import React from "react";
+import videoSrc from "./images/background.mp4";
 import projectsData from "./projectsData.json";
 import unemployment from "./images/Unemployment.png";
 import Retail from "./images/RetailX.png";
@@ -21,6 +22,10 @@ const images = {
 function Projects() {
   return (
     <div>
+      <video autoPlay loop muted className="background-video">
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div id="projects" className="projects">
         <h1>Projects</h1>
       </div>
