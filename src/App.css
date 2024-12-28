@@ -15,6 +15,9 @@
   padding: 0;
   margin: 0;
 }
+.home {
+  color: var(--color-primary);
+}
 .span {
   text-decoration: underline;
 }
@@ -340,7 +343,9 @@ body {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
-
+.blog-section {
+  color: var(--color-background);
+}
 .title_thumbnail {
   width: 400px;
   height: auto;

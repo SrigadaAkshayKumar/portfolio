@@ -125,7 +125,7 @@ function Blog() {
           );
         })
       ) : (
-        <p>Loading posts...</p>
+        <h1>Loading posts...</h1>
       )}
     </div>
   );
