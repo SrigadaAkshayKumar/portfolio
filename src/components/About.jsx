@@ -2,7 +2,7 @@ import React from "react";
 import profile from "./images/profile.png";
 import videoSrc from "./images/background.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, fab } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faLocationDot,
   faPhone,
@@ -53,9 +53,6 @@ function About() {
             </a>
           </div>
         </div>
-      </div>
-      <div className="resume">
-        <a href="#">Resume</a>
       </div>
       <div id="education" className="education">
         <div>
