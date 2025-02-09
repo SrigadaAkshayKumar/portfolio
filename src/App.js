@@ -5,6 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Blogs from "./components/Blog";
 import Achievements from "./components/Achievements";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -38,7 +39,7 @@ function App() {
               <div className={`menu1 ${menuOpen ? "open" : ""}`}>
                 <div className="home" onClick={handleLinkClick}>
                   <FontAwesomeIcon icon={faPen} />
-                  <a href="https://guideboard-mu.vercel.app/">Blogs</a>
+                  <Link to="/Blogs">Blogs</Link>
                 </div>
                 <div className="home" onClick={handleLinkClick}>
                   <FontAwesomeIcon icon={faLightbulb} />
@@ -69,6 +70,7 @@ function App() {
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/Skills" element={<Skills />} />
+            <Route path="/Blogs" element={<Blogs />} />
             <Route path="/Experience" element={<Experience />} />
             <Route path="/Projects" element={<Projects />} />
             <Route path="/Achievements" element={<Achievements />} />
@@ -78,7 +80,7 @@ function App() {
         {/* Bottom navigation links */}
         <div className="bottom-box">
           <div className="hom">
-            <a href="https://guideboard-mu.vercel.app/">Blogs</a>
+            <Link to="/Blogs">Blogs</Link>
           </div>
           <div className="hom" onClick={handleLinkClick}>
             <Link to="/Skills">Skills</Link>
