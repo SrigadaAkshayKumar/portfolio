@@ -71,53 +71,57 @@ function Blog() {
 
           return (
             <div key={postId} className="blog-post">
-              <div className="title_thumbnail">
+              <div className="blog-title">
                 {/* Blog Title and Link */}
                 <h2>
                   <a href={post.link} target="_blank" rel="noopener noreferrer">
                     {post.title}
                   </a>
                 </h2>
-
-                {/* Blog Thumbnail */}
-                {thumbnail && (
-                  <img
-                    src={thumbnail}
-                    alt={post.title}
-                    className="blog-thumbnail"
-                  />
-                )}
               </div>
-              <div className="date_dis">
-                {/* Blog Publication Date */}
-                <h2 className="publish-date">
-                  Published date: {new Date(post.pubDate).toLocaleDateString()}
-                </h2>
+              <div className="blog-tmb">
+                <div className="title_thumbnail">
+                  {/* Blog Thumbnail */}
+                  {thumbnail && (
+                    <img
+                      src={thumbnail}
+                      alt={post.title}
+                      className="blog-thumbnail"
+                    />
+                  )}
+                </div>
+                <div className="date_dis">
+                  {/* Blog Publication Date */}
+                  <h2 className="publish-date">
+                    Published date:{" "}
+                    {new Date(post.pubDate).toLocaleDateString()}
+                  </h2>
 
-                {/* Blog Description (shortened) */}
-                <p
-                  className="description"
-                  dangerouslySetInnerHTML={{ __html: shortDescription }}
-                ></p>
-                <div className="readmore">
-                  <div>
-                    {/* Read More Button */}
-                    <a
-                      href={post.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button className="read-more-btn">Read More</button>
-                    </a>
-                  </div>
-                  <div>
-                    {/* Share Button */}
-                    <button
-                      className="share-btn"
-                      onClick={() => handleShare(post.link)}
-                    >
-                      <FontAwesomeIcon icon={faShareNodes} />
-                    </button>
+                  {/* Blog Description (shortened) */}
+                  <p
+                    className="description"
+                    dangerouslySetInnerHTML={{ __html: shortDescription }}
+                  ></p>
+                  <div className="readmore">
+                    <div>
+                      {/* Read More Button */}
+                      <a
+                        href={post.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button className="read-more-btn">Read More</button>
+                      </a>
+                    </div>
+                    <div>
+                      {/* Share Button */}
+                      <button
+                        className="share-btn"
+                        onClick={() => handleShare(post.link)}
+                      >
+                        <FontAwesomeIcon icon={faShareNodes} />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

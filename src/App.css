@@ -339,10 +339,17 @@ body {
 
 .blog-post {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
+}
+.blog-tmb {
+  display: flex;
+  justify-content: space-evenly;
+}
+.blog-title {
+  margin: 1.5rem 3.5rem;
 }
 .blog-section {
   color: var(--color-background);
@@ -353,15 +360,14 @@ body {
   margin-bottom: 10px;
 }
 
-.title_thumbnail h2 {
-  padding: 15px 0;
-  font-size: 1.8rem;
+.blog-title h2 {
+  font-size: 2rem;
 }
-.title_thumbnail h2 a {
+.blog-title h2 a {
   text-decoration: none;
   color: var(--color-read-more-hover);
 }
-.title_thumbnail h2 a:hover {
+.blog-title h2 a:hover {
   text-decoration: underline;
   color: var(--color-read-more-bg);
 }
@@ -613,6 +619,9 @@ body {
   .About {
     flex-direction: column-reverse;
   }
+  .blog-tmb {
+    flex-direction: column;
+  }
   .para {
     width: 95%;
   }
@@ -765,12 +774,13 @@ body {
     width: 95%;
   }
   .date_dis {
-    width: 85%;
+    width: 95%;
   }
   .blog-thumbnail {
     width: 320px;
   }
   .title_thumbnail {
+    width: 98%;
     font-size: 1rem;
   }
   .soft-skills {
@@ -819,6 +829,18 @@ body {
     flex-direction: column;
     align-items: center;
     width: 98%;
+  }
+  .blog-tmb {
+    flex-direction: column;
+  }
+  .blog-post {
+    width: 100%;
+  }
+  .blog-title {
+    margin: 1rem 0;
+  }
+  .blog-title h2 {
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 420px) {
@@ -1026,7 +1048,7 @@ body {
     width: 300px;
   }
   .title_thumbnail {
-    font-size: 0.8rem;
+    width: 98%;
   }
   .skills h1 {
     font-size: 2rem;
