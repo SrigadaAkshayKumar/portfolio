@@ -19,12 +19,13 @@ function About() {
         </video>
         <div className="para">
           <p className="parap" id="parap">
-            <span className="span1">I am S.Akshay kumar</span> As a student
-            passionate about exploring the world of data science, I'm eager to
-            dive into statistical analysis, machine learning, and data
-            visualization. With a growing interest in Web Development, I enjoy
-            crafting responsive websites using HTML, CSS, JavaScript, React js,
-            python, Flask and MySQL.
+            <span className="span1">I am S.Akshay kumar</span> a passionate data
+            science student eager to explore statistical analysis, machine
+            learning, and data visualization. I enjoy uncovering insights from
+            data, building predictive models, and creating impactful
+            visualizations to solve real-world problems. With a strong curiosity
+            for data-driven decision-making, I am always excited to learn and
+            apply new techniques.
           </p>
         </div>
         <div className="photo">
@@ -78,45 +79,7 @@ function About() {
           <p> CGPA : 10</p>
         </div>
       </div>
-      <div className="lang-hobbies">
-        <div className="language">
-          <h1>
-            <span className="span">Languages Known</span> :
-          </h1>
-          <p>
-            -English
-            <br />
-            -Telugu
-            <br />
-            -Hindi
-          </p>
-        </div>
-        <div className="hobbies">
-          <h1>
-            <span className="span">Hobbies</span> :
-          </h1>
-          <p>
-            -Browsing on internet
-            <br />
-            -Technology Exploration
-            <br />
-            -Problem-Solving Challenges
-          </p>
-        </div>
-      </div>
-      <div id="Details" className="Details">
-        <h1>Details</h1>
-      </div>
       <div className="Add-cont">
-        <div className="Address">
-          <h1>
-            <span className="span">Address</span> :
-          </h1>
-          <p>
-            <FontAwesomeIcon icon={faLocationDot} /> HO.NO : 15-32, Palugugadda,
-            Domakonda, Kamareddy, Telangana, 503123
-          </p>
-        </div>
         <div className="contact">
           <div>
             <h1>

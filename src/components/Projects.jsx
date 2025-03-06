@@ -3,18 +3,14 @@ import videoSrc from "./images/background.mp4";
 import projectsData from "./projectsData.json";
 import unemployment from "./images/Unemployment.png";
 import Retail from "./images/RetailX.png";
-import Netflix from "./images/Netflix.png";
-import Rent from "./images/Rent.png";
-import Food from "./images/Food-order.png";
 import cricket from "./images/cricket.png";
 import result from "./images/result.png";
+import stock from "./images/stock.png";
 
 const images = {
   unemployment,
   Retail,
-  Netflix,
-  Rent,
-  Food,
+  stock,
   cricket,
   result,
 };

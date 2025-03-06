@@ -16,18 +16,14 @@ function Skills() {
           <h1>
             <span class="span">Technical Skills</span> :
           </h1>
-          <h3>Python (Intermediate), Java (Basic) </h3>
+          <h3>Programming Language: Python, Java, JavaScript (Basic)</h3>
           <h2>Data Science:</h2>
           <p>Tools: Excel, Microsoft Power BI, Tableau</p>
           <p>Data Analysis: Pandas, Numpy</p>
           <p>Data Visualization: Matplotlib, Seaborn, Plotly</p>
-          <p>Machine Learning: Scikit-learn</p>
-          <h2>Web Development:</h2>
-          <p>
-            - Frontend: HTML, CSS, JavaScript <br />
-            - Frameworks: Bootstrap, React js
-            <br />- Backend: Python, Frameworks: Flask <br />- Databases: MySQL
-          </p>
+          <p>Machine Learning: Scikit-learn, Tensorflow</p>
+          <h2>Database:</h2>
+          <p>SQL</p>
         </div>
         <div class="soft-skills">
           <h1>
@@ -63,14 +59,14 @@ function Skills() {
               (Google Cloud)
             </a>
             <br />
-            4. Data Analytics and Visualization Simulation -
+            4. Data Analytics and Visualization Job Simulation -
             <a href="https://drive.google.com/file/d/1Gbws8SJupUmzJC1tvX3-AsGDASLXI4mZ/view?usp=sharing">
               (Accenture)
             </a>
             <br />
-            5. Frontend Development (Html, CSS, Bootstrap and JavaScript) -
-            <a href="https://www.udemy.com/certificate/UC-547450c2-7141-4078-aa65-5ab5a2f7fc9b/">
-              (Udemy)
+            5. Python for Data Science -
+            <a href="https://drive.google.com/file/d/1gdkLY5JNFHbfdouUH4CSechsg2YbVHNI/view?usp=sharing">
+              (Nptel)
             </a>
             <br />
             6. Python Programming -

@@ -13,17 +13,19 @@ function Experience() {
       </div>
       <div class="experience1">
         <h1>
-          <span class="span">Internship</span> :
+          <span class="span">Data Analyst (Virtual internship)</span>
         </h1>
         <p>
-          Position : Junior Developer
+          <h3>Accenture</h3> (March - May 2024)
           <br />
-          Skilltmate Technologies
+          Performed data cleaning on large datasets about 25,000+ Rows to ensure
+          accuracy and consistency.
           <br />
-          Address: Plot No. 13, Patel Encalve, Sri Shyam Nagar, Telecom Nagar,
-          Yapral, Hyderabad, Telangana 500087
+          Implemented data visualizations using tools such as Power BI and
+          Prepared a comprehensive report on the project, summarizing key
+          insights.
         </p>
-        <a href="#">internship Certificate</a>
+        {/* <a href="#">internship Certificate</a> */}
       </div>
     </div>
   );
