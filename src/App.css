@@ -1100,4 +1100,7 @@ body {
   .box1 {
     width: 95%;
   }
+  .experience1 h1 {
+    font-size: 2rem;
+  }
 }
