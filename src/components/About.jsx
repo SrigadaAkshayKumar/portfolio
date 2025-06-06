@@ -1,6 +1,5 @@
 import React from "react";
 import profile from "./images/profile.png";
-import videoSrc from "./images/background.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -13,10 +12,6 @@ function About() {
   return (
     <div>
       <div className="About">
-        <video autoPlay loop muted className="background-video">
-          <source src={videoSrc} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
         <div className="para">
           <p className="parap" id="parap">
             <span className="span1">I am S.Akshay kumar</span> a passionate data

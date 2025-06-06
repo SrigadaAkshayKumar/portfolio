@@ -1,13 +1,8 @@
 import React from "react";
-import videoSrc from "./images/background.mp4";
 
 function Skills() {
   return (
     <div>
-      <video autoPlay loop muted className="background-video">
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
       <div id="skill-heading" class="skill-heading">
         <h1>Skills</h1>
       </div>
@@ -30,11 +25,13 @@ function Skills() {
             <span class="span">Soft Skills</span> :
           </h1>
           <p>
-            - Communication Skills
+            Communication Skills
             <br />
-            - Teamwork <br />
-            - Problem-Solving <br />- Time Management
-            <br />- Analytical thinking
+            Teamwork <br />
+            Problem-Solving <br />
+            Time Management
+            <br />
+            Analytical thinking
           </p>
         </div>
       </div>

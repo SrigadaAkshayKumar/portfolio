@@ -3,7 +3,6 @@ import achievementsData from "./achievementsData.json";
 import Hackathon1 from "./images/Hackathon1.jpg";
 import Hackathon2 from "./images/Hackathon2.png";
 import nptel from "./images/Nptel.png";
-import videoSrc from "./images/background.mp4";
 
 const images = {
   Hackathon1,
@@ -14,23 +13,36 @@ const images = {
 function Achievements() {
   return (
     <div>
-      <video autoPlay loop muted className="background-video">
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div id="achievements" className="projects">
+        <h1>Achievements</h1>
+      </div>
       <div className="project1">
         {achievementsData.map((achievement, index) => (
           <div className="project" key={index}>
-            <div className="box1">
-              <h2>
-                <span className="span">{achievement.title}</span>:
-              </h2>
-              <img src={images[achievement.image]} alt="Achievement" />
-            </div>
-            <div className="box2">
-              <p>{achievement.description}</p>
-              <h3>Technologies Used :</h3>
-              <p>{achievement.technologies}</p>
+            {/* Title on top */}
+            <h2 className="project-title">
+              <span className="span">{achievement.title}</span>:
+            </h2>
+
+            {/* Content - image left, description right */}
+            <div className="project-content">
+              <div className="box1">
+                <img
+                  src={images[achievement.image]}
+                  alt={achievement.title}
+                  className="project-image"
+                />
+              </div>
+
+              <div className="box2">
+                <p>{achievement.description}</p>
+                {achievement.technologies && (
+                  <>
+                    <h3>Technologies Used :</h3>
+                    <p>{achievement.technologies}</p>
+                  </>
+                )}
+              </div>
             </div>
           </div>
         ))}
