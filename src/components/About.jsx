@@ -87,7 +87,7 @@ function About() {
               srigadaakshay@gmail.com
             </p>
           </div>
-          <div className="icon">
+          <div className="icon1">
             <a href="https://www.linkedin.com/in/akshayak8">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>

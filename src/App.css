@@ -219,7 +219,7 @@ button:hover,
 }
 
 .icon1 a {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0 10px;
   color: var(--primary-color);
   transition: color var(--transition);
@@ -343,7 +343,7 @@ button:hover,
 .blog-thumbnail {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 5px;
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -354,7 +354,7 @@ button:hover,
 }
 
 .publish-date {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--secondary-color);
   margin-bottom: 0.7rem;
@@ -670,7 +670,7 @@ button:hover,
 .project-image {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 5px;
   object-fit: contain;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
@@ -682,8 +682,7 @@ button:hover,
 }
 
 .box2 p {
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -707,6 +706,9 @@ button:hover,
   }
 }
 @media (max-width: 500px) {
+  .parap {
+    font-size: 1rem;
+  }
   .nav .navbar {
     padding: 1rem;
   }
@@ -725,10 +727,18 @@ button:hover,
   }
   .education {
     margin: 0 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+  .education h1 {
+    margin: 0;
   }
   .Add-cont {
-    margin: 0 2rem;
+    margin: 0 1rem;
+    padding: 2rem 1rem;
+    padding-bottom: 0;
+  }
+  .contact p {
+    font-size: 1rem;
   }
   .bottom-box {
     padding: 1rem 2rem;
@@ -736,26 +746,35 @@ button:hover,
   .blog-post {
     padding: 0.5rem;
   }
+  .blog-title {
+    padding: 1.2rem 1rem;
+  }
   .blog-title h2 {
     font-size: 1.4rem;
   }
   .blog-tmb {
-    padding-bottom: 0;
+    padding: 0 1.5rem;
+  }
+  .tech-skills h3 {
+    font-size: 1.2rem;
   }
   #skill-heading {
     margin: 1.5rem 0;
   }
   .skills {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
   .certifi {
     margin: 0 1rem;
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
   .experience1 {
     margin: 0 1.5rem;
     padding: 1.5rem;
     margin-bottom: 8rem;
+  }
+  .experience1 h1 {
+    font-size: 1.5rem;
   }
   .project {
     padding: 1.8rem 1.5rem;
@@ -765,6 +784,6 @@ button:hover,
     margin: 1.5rem 0;
   }
   .project-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
