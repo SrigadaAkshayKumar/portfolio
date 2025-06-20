@@ -1,11 +1,13 @@
 import React from "react";
 import achievementsData from "./achievementsData.json";
 import Hackathon1 from "./images/Hackathon1.jpg";
+import opensource from "./images/opensource.png";
 import Hackathon2 from "./images/Hackathon2.png";
 import nptel from "./images/Nptel.png";
 
 const images = {
   Hackathon1,
+  opensource,
   Hackathon2,
   nptel,
 };
@@ -38,7 +40,7 @@ function Achievements() {
                 <p>{achievement.description}</p>
                 {achievement.technologies && (
                   <>
-                    <h3>Technologies Used :</h3>
+                    <h3>Technologies:</h3>
                     <p>{achievement.technologies}</p>
                   </>
                 )}
