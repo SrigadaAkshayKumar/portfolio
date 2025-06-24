@@ -8,6 +8,20 @@ function Experience() {
       </div>
       <div class="experience1">
         <h1>
+          <span class="span">Junior Developer Intern</span>
+        </h1>
+        <p>
+          <h3>Skilltmate Technologies</h3> (Jan - Feb 2024)
+          <br />
+          Managed the development of a responsive online food ordering webpage
+          using HTML, CSS, and Bootstrap for cross-device compatibility.
+          <br />
+          Optimized cart functionality and interactive menu features with
+          dynamic JavaScript, enhancing Use Experience
+        </p>
+      </div>
+      <div class="experience1">
+        <h1>
           <span class="span">Data Analyst (Virtual internship)</span>
         </h1>
         <p>
@@ -20,7 +34,6 @@ function Experience() {
           Prepared a comprehensive report on the project, summarizing key
           insights.
         </p>
-        {/* <a href="#">internship Certificate</a> */}
       </div>
     </div>
   );

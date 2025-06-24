@@ -1,14 +1,14 @@
 import React from "react";
 import projectsData from "./projectsData.json";
 import unemployment from "./images/Unemployment.png";
-import Retail from "./images/RetailX.png";
+import instructo from "./images/instructo.png";
 import cricket from "./images/cricket.png";
 import result from "./images/result.png";
 import stock from "./images/stock.png";
 
 const images = {
+  instructo,
   unemployment,
-  Retail,
   stock,
   cricket,
   result,
@@ -33,6 +33,14 @@ function Projects() {
                   rel="noopener noreferrer"
                 >
                   GitHub
+                </a>
+                ) | (
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ViewLive
                 </a>
                 )
               </span>

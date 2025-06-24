@@ -2,36 +2,41 @@
   {
     "title": "Stock Analyzer - Stock Market Analysis Tool",
     "description": "The Stock Analyzer project is a comprehensive stock market analysis tool that leverages machine learning models to help users gain insights into stock performance. It allows users to input stock symbols, select specific date ranges, and explore historical stock trends through interactive visualizations. The platform fetches real-time stock data, processes it, and displays key trends, making it easier for users to analyze past performance and identify patterns in price movements.",
-    "technologies": "Python, LSTM, Scikitlearn, Flask, React",
+    "technologies": "Python, Flask, ReactJS, HTML/CSS, JavaScript",
     "image": "stock",
-    "githubLink": "https://github.com/SrigadaAkshayKumar/stock"
+    "githubLink": "https://github.com/SrigadaAkshayKumar/stock",
+    "liveLink": "https://aistockanalyzer.onrender.com"
   },
   {
-    "title": "Descriptive Analysis of Cricket Player Stats – Virat Kohli",
-    "description": "Conducted an analytical project focused on evaluating Virat Kohli’s cricket performance by web scraping data from ESPNcricinfo. where I analyzed various metrics such as batting averages, strike rates, and performance across different formats. This detailed analysis provided insights into his consistency, strengths, and key trends in his career, offering a deeper understanding of his performance over time.",
-    "technologies": "pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebook and Data Scraping tools",
-    "image": "cricket",
-    "githubLink": "https://github.com/SrigadaAkshayKumar/Discriptive-Analysis-cricket-player-stats-Virat-Kohli"
+    "title": "Instructo - AI-Powered Personalized Learning Platform",
+    "description": "Instructo is an AI-driven educational platform designed to enhance learning by generating personalized roadmaps and providing access to structured study materials. The platform focuses on advanced computer science topics, eliminating unnecessary concepts for an optimized learning experience.",
+    "technologies": "ReactJS, HTML/CSS, JavaScript, Gemini API",
+    "image": "instructo",
+    "githubLink": "https://github.com/SrigadaAkshayKumar/E-Learning",
+    "liveLink": "https://instructoelearning.vercel.app"
   },
   {
     "title": "Department of DataScience Results Analysis ",
     "description": "Conducted a project analyzing the performance results of my department of Data Science at college. Using web scraping with Selenium, I collected data from result portal. The analysis focused on students performance across various subjects, section wise pass and fail percentages. The project involved data cleaning, exploratory data analysis (EDA), and visualizing the results through interactive charts to highlight departmental performance.",
     "technologies": "pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebook and selenium",
     "image": "result",
-    "githubLink": "https://github.com/SrigadaAkshayKumar/Department-of-DataScience-Results-Analysis"
+    "githubLink": "https://github.com/SrigadaAkshayKumar/Department-of-DataScience-Results-Analysis",
+    "liveLink": "https://github.com/SrigadaAkshayKumar/Department-of-DataScience-Results-Analysis"
+  },
+  {
+    "title": "Descriptive Analysis of Cricket Player Stats – Virat Kohli",
+    "description": "Conducted an analytical project focused on evaluating Virat Kohli’s cricket performance by web scraping data from ESPNcricinfo. where I analyzed various metrics such as batting averages, strike rates, and performance across different formats. This detailed analysis provided insights into his consistency, strengths, and key trends in his career, offering a deeper understanding of his performance over time.",
+    "technologies": "pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebook and Data Scraping tools",
+    "image": "cricket",
+    "githubLink": "https://github.com/SrigadaAkshayKumar/Discriptive-Analysis-cricket-player-stats-Virat-Kohli",
+    "liveLink": "https://github.com/SrigadaAkshayKumar/Discriptive-Analysis-cricket-player-stats-Virat-Kohli"
   },
   {
     "title": "Unemployment Analysis case study",
     "description": "Conducted an Unemployment Analysis project where I utilized data science techniques to analyze trends and key factors affecting unemployment. The project involved data collection, cleaning, and exploratory data analysis (EDA). I developed predictive models to forecast future unemployment rates and visualized the results through interactive charts.",
     "technologies": "pandas, Numpy, Matplotlib, Seaborn, scikit-learn, Jupyter Notebook and Power BI",
     "image": "unemployment",
-    "githubLink": "https://github.com/SrigadaAkshayKumar/Unemployment-Analysis"
-  },
-  {
-    "title": "sentiment Analysis RetailX Sales performance",
-    "description": "The RetailX Sales Analysis project offers insights into retail sales data. Through data analysis and visualization, it explores sales performance, customer behavior, and trends. This project showcases my journey in understanding and applying analytics techniques to real-world datasets.",
-    "technologies": "pandas, Numpy, Matplotlib, Seaborn, scikit-learn, Jupyter Notebook and Power BI",
-    "image": "Retail",
-    "githubLink": "https://github.com/SrigadaAkshayKumar/Sentiment-Analysis-RetailX-Sales-performance"
+    "githubLink": "https://github.com/SrigadaAkshayKumar/Unemployment-Analysis",
+    "liveLink": "https://github.com/SrigadaAkshayKumar/Unemployment-Analysis"
   }
 ]

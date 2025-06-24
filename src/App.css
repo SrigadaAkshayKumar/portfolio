@@ -2,15 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
-  --primary-bg: #465b8b; /* Soft blue background */
-  --text-color: #0a204e; /* Deep navy text */
-  --primary-color: #092768; /* Darker blue for headings, accents */
-  --secondary-color: #103454; /* Medium blue */
-  --accent: #5e7591; /* Accent for highlights */
-  --light-accent: #829cbc; /* Lightest blue for subtle elements */
-  --button-color: #112d51; /* Button background */
-  --hover-color: #02203a; /* Hover state */
-  --nav-hover: #1d3461; /* Navigation hover */
+  --primary-bg: linear-gradient(
+    90deg,
+    #335ff1,
+    #621cd0
+  ); /* Soft blue background */
+  --text-color: #092256; /* Deep navy text */
+  --primary-color: #061b49; /* Darker blue for headings, accents */
+  --secondary-color: #052846; /* Medium blue */
+  --light-accent: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.112),
+    rgba(255, 255, 255, 0.326)
+  ); /* Lightest blue for subtle elements */
+  --button-color: #112d51df; /* Button background */
+  --hover-color: #072f51b9; /* Hover state */
+  --nav-hover: #092255; /* Navigation hover */
   --transition: 0.3s ease-in-out;
 }
 
@@ -92,7 +99,7 @@ body {
     position: absolute;
     top: 80px;
     right: 10px;
-    background-color: var(--accent);
+    background-color: var(--light-accent);
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -107,6 +114,9 @@ body {
   }
 }
 
+.content {
+  background: var(--primary-bg);
+}
 /* Main Content */
 .main-content {
   animation: fadeIn 0.6s ease-in-out;
@@ -116,7 +126,7 @@ body {
 .bottom-box {
   margin-top: 2rem;
   padding: 1rem;
-  background: var(--accent);
+  background: var(--light-accent);
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -126,7 +136,7 @@ body {
 
 .hom a {
   text-decoration: none;
-  color: var(--button-color);
+  color: var(--secondary-color);
   font-size: 1.3rem;
   font-weight: 600;
   transition: var(--transition);
@@ -186,7 +196,6 @@ button:hover,
   align-items: center;
   padding: 3rem 2rem;
   flex-wrap: wrap;
-  background-color: var(--primary-bg);
   font-family: var(--font, "Poppins", sans-serif);
 }
 
@@ -211,8 +220,8 @@ button:hover,
 }
 
 .photo1 img {
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -238,7 +247,7 @@ button:hover,
   justify-content: center;
   padding: 3rem 0;
   margin: 0 5rem;
-  background-color: var(--light-accent);
+  background: var(--light-accent);
   font-family: var(--font, "Poppins", sans-serif);
 }
 
@@ -294,7 +303,7 @@ button:hover,
 }
 
 .blog-post {
-  background-color: var(--light-accent);
+  background: var(--light-accent);
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(1, 24, 216, 0.15);
   margin-bottom: 2.5rem;
@@ -433,7 +442,7 @@ button:hover,
 .tech-skills,
 .soft-skills {
   flex: 1 1 350px;
-  background-color: var(--light-accent);
+  background: var(--light-accent);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(1, 24, 216, 0.1);
@@ -458,7 +467,7 @@ button:hover,
 }
 
 .span {
-  color: var(--hover-color);
+  color: var(--secondary-color);
   font-weight: 700;
 }
 
@@ -496,13 +505,13 @@ button:hover,
 .certificate h3 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .certifi {
   max-width: 700px;
   margin: 0 auto 4rem;
-  background-color: var(--light-accent);
+  background: var(--light-accent);
   padding: 2rem 2.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(1, 24, 216, 0.1);
@@ -521,7 +530,7 @@ button:hover,
 }
 
 .certifi-btn a {
-  color: var(--hover-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 600;
   transition: color var(--transition);
@@ -557,8 +566,8 @@ button:hover,
 
 .experience1 {
   max-width: 1000px;
-  margin: 0 auto 11rem;
-  background-color: var(--light-accent);
+  margin: 0 auto 4rem;
+  background: var(--light-accent);
   padding: 2rem 2.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(1, 24, 216, 0.1);
@@ -576,13 +585,13 @@ button:hover,
 .experience1 h1 {
   font-size: 1.7rem;
   font-weight: 700;
-  color: var(--hover-color);
+  color: var(--primary-color);
   margin-bottom: 0.8rem;
 }
 
 .experience1 .span {
   font-weight: 700;
-  color: var(--hover-color);
+  color: var(--secondary-color);
 }
 
 .experience1 h3 {
@@ -601,7 +610,7 @@ button:hover,
 .experience1 a {
   display: inline-block;
   margin-top: 1rem;
-  color: var(--hover-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 600;
   transition: color var(--transition);
@@ -625,7 +634,7 @@ button:hover,
   margin-bottom: 3rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(1, 24, 216, 0.1);
-  background-color: var(--light-accent);
+  background: var(--light-accent);
   padding: 1.8rem 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -640,11 +649,11 @@ button:hover,
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: var(--hover-color);
+  color: var(--primary-color);
 }
 
 .project-title .span a {
-  color: var(--hover-color);
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
