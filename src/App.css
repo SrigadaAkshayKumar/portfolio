@@ -512,7 +512,7 @@ button:hover,
 }
 
 .certifi {
-  max-width: 700px;
+  max-width: 1400px;
   margin: 0 auto 4rem;
   background: var(--light-accent);
   padding: 2rem 2.5rem;
@@ -523,25 +523,26 @@ button:hover,
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   line-height: 1.6;
 }
-.certifi:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(1, 24, 216, 0.2);
+.certifications-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.certifi-btn h1 {
-  font-size: 1.1rem;
-  font-weight: 500;
+.cert-card {
+  border: 1px solid #170f7f;
+  border-radius: 8px;
+  padding: 25px 20px;
+  width: 280px;
+  background: var(--light-accent);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.certifi-btn a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: 600;
-  transition: color var(--transition);
-}
-
-.certifi-btn a:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
+/* Hover Effect */
+.cert-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 700px) {

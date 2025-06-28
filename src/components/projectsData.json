@@ -8,20 +8,20 @@
     "liveLink": "https://aistockanalyzer.onrender.com"
   },
   {
+    "title": "Student Results Analysis Dashboard",
+    "description": "Built and deployed an interactive web-based dashboard to analyze the academic results of the Data Science department across all years and semesters. The project enables dynamic filtering by batch, year, semester, and section. It provides subject-wise performance insights, pass/fail analysis, top performers, and departmental trends using visualizations. The dashboard was built using Streamlit, containerized with Docker, and deployed via Render for public access.",
+    "technologies": "Python, Pandas, Plotly, Streamlit, Docker, Git, Render",
+    "image": "result",
+    "githubLink": "https://github.com/SrigadaAkshayKumar/student-results-dashboard",
+    "liveLink": "https://student-dashboard-mrec.onrender.com"
+  },
+  {
     "title": "Instructo - AI-Powered Personalized Learning Platform",
     "description": "Instructo is an AI-driven educational platform designed to enhance learning by generating personalized roadmaps and providing access to structured study materials. The platform focuses on advanced computer science topics, eliminating unnecessary concepts for an optimized learning experience.",
     "technologies": "ReactJS, HTML/CSS, JavaScript, Gemini API",
     "image": "instructo",
     "githubLink": "https://github.com/SrigadaAkshayKumar/E-Learning",
     "liveLink": "https://instructoelearning.vercel.app"
-  },
-  {
-    "title": "Department of DataScience Results Analysis ",
-    "description": "Conducted a project analyzing the performance results of my department of Data Science at college. Using web scraping with Selenium, I collected data from result portal. The analysis focused on students performance across various subjects, section wise pass and fail percentages. The project involved data cleaning, exploratory data analysis (EDA), and visualizing the results through interactive charts to highlight departmental performance.",
-    "technologies": "pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebook and selenium",
-    "image": "result",
-    "githubLink": "https://github.com/SrigadaAkshayKumar/Department-of-DataScience-Results-Analysis",
-    "liveLink": "https://github.com/SrigadaAkshayKumar/Department-of-DataScience-Results-Analysis"
   },
   {
     "title": "Descriptive Analysis of Cricket Player Stats – Virat Kohli",

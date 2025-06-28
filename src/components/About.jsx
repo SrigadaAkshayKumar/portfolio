@@ -51,6 +51,11 @@ function About() {
               </span>
             </a>
           </div>
+          <div ClassName="resume">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <button>View Resume</button>
+            </a>
+          </div>
         </div>
       </div>
       <div id="education" className="education">
