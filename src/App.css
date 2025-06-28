@@ -200,8 +200,7 @@ button:hover,
 }
 
 .para {
-  max-width: 600px;
-  margin-bottom: 2rem;
+  max-width: 700px;
 }
 
 .parap {
@@ -719,6 +718,9 @@ button:hover,
   }
 }
 @media (max-width: 500px) {
+  .para {
+    margin-top: 2.5rem;
+  }
   .parap {
     font-size: 1rem;
   }
