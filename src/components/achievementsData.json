@@ -6,16 +6,16 @@
     "image": "Hackathon1"
   },
   {
-    "title": "Selected as Contributor for Social Summer Of Code (SSOC) - 2025",
-    "description": "Selected as a contributor for SSOC 2025, an open-source program focused on collaborative development. Actively contributing to web development and Python-based open-source projects by resolving issues, implementing features, and improving documentation. Working closely with mentors and maintainers to enhance real-world project experience and sharpen development skills.",
-    "technologies": "Open Source, Git, GitHub, Collaboration, Web Development, Python",
-    "image": "opensource"
-  },
-  {
     "title": "Achieved Elite Badge in NPTEL Exam for 'Python for Data Science' Course",
     "description": "Successfully completed the NPTEL certification course with an elite badge. This government-recognized program by IITs focuses on equipping industry-relevant skills. The course covered Python programming essentials, data analysis techniques, data visualization, machine learning basics, and working with libraries like NumPy and Pandas. By achieving this milestone, I showcased my ability to solve real-world data problems.",
     "technologies": "Python, Data Science, NumPy, Pandas",
     "image": "nptel"
+  },
+  {
+    "title": "Selected as Contributor for Social Summer Of Code (SSOC) - 2025",
+    "description": "Selected as a contributor for SSOC 2025, an open-source program focused on collaborative development. Actively contributing to web development and Python-based open-source projects by resolving issues, implementing features, and improving documentation. Working closely with mentors and maintainers to enhance real-world project experience and sharpen development skills.",
+    "technologies": "Open Source, Git, GitHub, Collaboration, Web Development, Python",
+    "image": "opensource"
   },
   {
     "title": "Recognized for Work in Data Analysis Hackathon by GrowthSchool",

@@ -16,14 +16,6 @@
     "liveLink": "https://student-dashboard-mrec.onrender.com"
   },
   {
-    "title": "Instructo - AI-Powered Personalized Learning Platform",
-    "description": "Instructo is an AI-driven educational platform designed to enhance learning by generating personalized roadmaps and providing access to structured study materials. The platform focuses on advanced computer science topics, eliminating unnecessary concepts for an optimized learning experience.",
-    "technologies": "ReactJS, HTML/CSS, JavaScript, Gemini API",
-    "image": "instructo",
-    "githubLink": "https://github.com/SrigadaAkshayKumar/E-Learning",
-    "liveLink": "https://instructoelearning.vercel.app"
-  },
-  {
     "title": "Descriptive Analysis of Cricket Player Stats – Virat Kohli",
     "description": "Conducted an analytical project focused on evaluating Virat Kohli’s cricket performance by web scraping data from ESPNcricinfo. where I analyzed various metrics such as batting averages, strike rates, and performance across different formats. This detailed analysis provided insights into his consistency, strengths, and key trends in his career, offering a deeper understanding of his performance over time.",
     "technologies": "pandas, Numpy, Matplotlib, Seaborn, Jupyter Notebook and Data Scraping tools",
@@ -38,5 +30,14 @@
     "image": "unemployment",
     "githubLink": "https://github.com/SrigadaAkshayKumar/Unemployment-Analysis",
     "liveLink": "https://github.com/SrigadaAkshayKumar/Unemployment-Analysis"
+  },
+
+  {
+    "title": "Instructo - AI-Powered Personalized Learning Platform",
+    "description": "Instructo is an AI-driven educational platform designed to enhance learning by generating personalized roadmaps and providing access to structured study materials. The platform focuses on advanced computer science topics, eliminating unnecessary concepts for an optimized learning experience.",
+    "technologies": "ReactJS, HTML/CSS, JavaScript, Gemini API",
+    "image": "instructo",
+    "githubLink": "https://github.com/SrigadaAkshayKumar/E-Learning",
+    "liveLink": "https://instructoelearning.vercel.app"
   }
 ]

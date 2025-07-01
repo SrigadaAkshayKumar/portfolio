@@ -14,16 +14,15 @@ function About() {
       <div className="About">
         <div className="para">
           <p className="parap" id="parap">
-            <span className="span1">I am S.Akshay kumar,</span>A passionate
-            programmer with a strong foundation in Python, data structures, and
-            database management. I enjoy building efficient solutions, solving
-            real-world problems. Alongside core programming, I’ve explored data
-            science and web development—gaining hands-on experience in data
-            analysis, and creating interactive web applications using React. I’m
-            also enthusiastic about contributing to open-source projects and
-            collaborating with the developer community. Currently looking for
-            opportunities in software development, backend engineering, and
-            data-focused roles.
+            <span className="span1">I am S.Akshay kumar,</span>a passionate
+            programmer with a strong background in Python, data structures, and
+            databases. I enjoy working with data to solve real-world problems. I
+            have hands-on experience in data analysis, including cleaning data,
+            making charts, and finding useful insights using tools like Power BI
+            and SQL. I’m also enthusiastic about contributing to open-source
+            projects and collaborating with the developer community. Currently
+            looking for opportunities in data analysis, data science, or backend
+            development.
           </p>
         </div>
         <div className="photo">

@@ -8,16 +8,16 @@ function Experience() {
       </div>
       <div class="experience1">
         <h1>
-          <span class="span">Junior Developer Intern</span>
+          <span class="span">Data Science Trainee</span>
         </h1>
         <p>
-          <h3>Skilltmate Technologies</h3> (Jan - Feb 2024)
+          <h3>Skilltmate Technologies</h3> (May 2024)
           <br />
-          Managed the development of a responsive online food ordering webpage
-          using HTML, CSS, and Bootstrap for cross-device compatibility.
+          Developed and optimized machine learning models for predictive
+          analysis, improving accuracy in data-driven decision-making.
           <br />
-          Optimized cart functionality and interactive menu features with
-          dynamic JavaScript, enhancing Use Experience
+          Preprocessed large datasets using Python libraries like Pandas and
+          NumPy, enhancing model efficiency and performance.
         </p>
       </div>
       <div class="experience1">
