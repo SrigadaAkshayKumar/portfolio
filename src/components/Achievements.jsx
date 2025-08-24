@@ -1,7 +1,7 @@
 import React from "react";
 import achievementsData from "./achievementsData.json";
 import Hackathon1 from "./images/Hackathon1.jpg";
-import opensource from "./images/opensource.png";
+import opensource from "./images/opensource.jpg";
 import Hackathon2 from "./images/Hackathon2.png";
 import nptel from "./images/Nptel.png";
 

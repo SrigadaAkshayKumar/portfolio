@@ -12,9 +12,9 @@
     "image": "nptel"
   },
   {
-    "title": "Selected as Contributor for Social Summer Of Code (SSOC) - 2025",
-    "description": "Selected as a contributor for SSOC 2025, an open-source program focused on collaborative development. Actively contributing to web development and Python-based open-source projects by resolving issues, implementing features, and improving documentation. Working closely with mentors and maintainers to enhance real-world project experience and sharpen development skills.",
-    "technologies": "Open Source, Git, GitHub, Collaboration, Web Development, Python",
+    "title": "Project Admin – GSSoC 2025 (GirlScript Summer of Code)",
+    "description": "Selected as a project Admin for GSSoC 2025, an open-source program focused on collaborative development.Collaborated with 20+ developers to enhance a stock price prediction model and deployed it as a full-stack web app by building ETL pipelines with Python (Pandas, yfinance) and scheduling daily data fetches using Apache Airflow, processing 100,000+ stock records and improving prediction accuracy by 5%.",
+    "technologies": "Open Source, Git, GitHub, Collaboration, Team Management, Python",
     "image": "opensource"
   },
   {
