@@ -34,7 +34,7 @@ function Skills() {
           <p>
             Analytical thinking
             <br />
-            Teamwork <br />
+            Team Management <br />
             Problem-Solving <br />
             Time Management
             <br />

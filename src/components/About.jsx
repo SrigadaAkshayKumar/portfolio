@@ -21,8 +21,8 @@ function About() {
             making charts, and finding useful insights using tools like Power BI
             and SQL. I’m also enthusiastic about contributing to open-source
             projects and collaborating with the developer community. Currently
-            looking for opportunities in data analysis, data science, or backend
-            development.
+            looking for opportunities in data analysis, data science and data
+            Engineer Roles
           </p>
         </div>
         <div className="photo">
@@ -70,7 +70,7 @@ function About() {
             500049
           </p>
           <p>Year : I am currently in my third year of studying engineering</p>
-          <p>CGPA : 8.7</p>
+          <p>CGPA : 8.55</p>
           <h3>Intermediate (12th Grade)</h3>
           <p>junior college, mallampet, Hyderabad, Telangana, 500090 </p>
           <p>Year of Completion : 2022</p>

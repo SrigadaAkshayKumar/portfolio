@@ -24,7 +24,7 @@ function Experience() {
       </div>
       <div class="experience1">
         <h1>
-          <span class="span">Data Science Trainee</span>
+          <span class="span">Data Science Intern</span>
         </h1>
         <p>
           <h3>Skilltmate Technologies</h3> (May 2024 - June 2024)
