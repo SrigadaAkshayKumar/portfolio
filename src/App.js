@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import "./App.css";
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+} from "react-router-dom";
+
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Blogs from "./components/Blog";
 import Achievements from "./components/Achievements";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPen,
@@ -15,87 +23,174 @@ import {
   faBars,
   faGraduationCap,
   faUserTie,
+  faPhone,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
-function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-  const handleLinkClick = () => {
+function HomePage() {
+  return (
+    <>
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="experience">
+        <Experience />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="achievements">
+        <Achievements />
+      </section>
+    </>
+  );
+}
+
+function Navbar({ menuOpen, setMenuOpen }) {
+  const navigate = useNavigate();
+
+  const navigateToSection = (sectionId) => {
     setMenuOpen(false);
-    window.scrollTo(0, 0);
+
+    navigate("/");
+
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 100);
   };
 
   return (
-    <Router>
-      <div className="content">
-        <header className="header">
-          <nav className="nav">
-            <div className="navbar">
-              <div className="head">
-                <Link to="/">
-                  <FontAwesomeIcon icon={faGraduationCap} />
-                </Link>
-              </div>
-              <div className={`menu1 ${menuOpen ? "open" : ""}`}>
-                <div className="home" onClick={handleLinkClick}>
-                  <FontAwesomeIcon icon={faPen} />
-                  <Link to="/Blogs">Blogs</Link>
-                </div>
-                <div className="home" onClick={handleLinkClick}>
-                  <FontAwesomeIcon icon={faLightbulb} />
-                  <Link to="/Skills">Skills</Link>
-                </div>
-                <div className="home" onClick={handleLinkClick}>
-                  <FontAwesomeIcon icon={faUserTie} />
-                  <Link to="/Experience">Experience</Link>
-                </div>
-                <div className="home" onClick={handleLinkClick}>
-                  <FontAwesomeIcon icon={faFileExport} />
-                  <Link to="/Projects">Projects</Link>
-                </div>
-                <div className="home" onClick={handleLinkClick}>
-                  <FontAwesomeIcon icon={faFileExport} />
-                  <Link to="/Achievements">Achievements</Link>
-                </div>
-              </div>
-              <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-                <FontAwesomeIcon icon={faBars} />
-              </div>
+    <header className="header">
+      <nav className="nav">
+        <div className="navbar">
+          <div className="head">
+            <div
+              style={{ cursor: "pointer", fontSize: "4.5rem" }}
+              onClick={() => navigateToSection("about")}
+            >
+              <FontAwesomeIcon icon={faGraduationCap} />
             </div>
-          </nav>
-        </header>
+          </div>
 
-        {/* Main content area for Routes */}
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/Skills" element={<Skills />} />
-            <Route path="/Blogs" element={<Blogs />} />
-            <Route path="/Experience" element={<Experience />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/Achievements" element={<Achievements />} />
-          </Routes>
-        </main>
+          <div className={`menu1 ${menuOpen ? "open" : ""}`}>
+            <div className="home" onClick={() => navigateToSection("skills")}>
+              <FontAwesomeIcon icon={faLightbulb} />
+              <span>Skills</span>
+            </div>
 
-        {/* Bottom navigation links */}
-        <div className="bottom-box">
-          <div className="hom">
-            <Link to="/Blogs">Blogs</Link>
+            <div
+              className="home"
+              onClick={() => navigateToSection("experience")}
+            >
+              <FontAwesomeIcon icon={faUserTie} />
+              <span>Experience</span>
+            </div>
+
+            <div className="home" onClick={() => navigateToSection("projects")}>
+              <FontAwesomeIcon icon={faFileExport} />
+              <span>Projects</span>
+            </div>
+
+            <div
+              className="home"
+              onClick={() => navigateToSection("achievements")}
+            >
+              <FontAwesomeIcon icon={faFileExport} />
+              <span>Achievements</span>
+            </div>
+
+            <div
+              className="home"
+              onClick={() => {
+                setMenuOpen(false);
+                navigate("/blogs");
+              }}
+            >
+              <FontAwesomeIcon icon={faPen} />
+              <span>Blogs</span>
+            </div>
           </div>
-          <div className="hom" onClick={handleLinkClick}>
-            <Link to="/Skills">Skills</Link>
-          </div>
-          <div className="hom" onClick={handleLinkClick}>
-            <Link to="/Experience">Experience</Link>
-          </div>
-          <div className="hom" onClick={handleLinkClick}>
-            <Link to="/Projects">Projects</Link>
-          </div>
-          <div className="hom" onClick={handleLinkClick}>
-            <Link to="/Achievements">Achievements</Link>
+
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            <FontAwesomeIcon icon={faBars} />
           </div>
         </div>
-      </div>
+      </nav>
+    </header>
+  );
+}
+
+function AppContent() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <div className="content">
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/blogs" element={<Blogs />} />
+        </Routes>
+      </main>
+      <footer className="Add-cont">
+        <div className="contact">
+          <div>
+            <h1>
+              <span className="span">Contact</span> :
+            </h1>
+
+            <p>
+              <FontAwesomeIcon icon={faPhone} /> Phone : 9533384236
+              <br />
+              <FontAwesomeIcon icon={faEnvelope} /> Email :{" "}
+              srigadaakshay@gmail.com
+            </p>
+          </div>
+
+          <div className="icon1">
+            <a
+              href="https://www.linkedin.com/in/akshayak8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+
+            <a
+              href="https://github.com/SrigadaAkshayKumar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }

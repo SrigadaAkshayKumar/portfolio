@@ -8,26 +8,81 @@ function Skills() {
       </div>
       <div class="skills">
         <div class="tech-skills">
-          <h1>
+          {/* <h1>
             <span class="span">Technical Skills</span> :
-          </h1>
+          </h1> */}
 
-          <h3>Programming Languages:</h3>
-          <p>Python, SQL, Java (Basic)</p>
+          <h3 style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Programming Languages:
+          </h3>
+          <p style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Python, SQL
+          </p>
 
-          <h3>Libraries & Frameworks:</h3>
-          <p>Pandas, NumPy, Matplotlib, Scikit-learn, Data Scraping, Flask</p>
+          <br />
+          <br />
 
-          <h3>Tools & Technologies:</h3>
-          <p>Jupyter Notebook, Excel, Power BI, Git, GitHub, VS Code</p>
+          <h3 style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Data Engineering & Analytics:
+          </h3>
+          <p style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            PySpark, ETL, Data Warehousing, Data Modeling, Data Analysis
+          </p>
 
-          <h3>Additional Skills:</h3>
-          <p>
-            Data Cleaning, Data Visualization, Data Analysis, Problem Solving
+          <br />
+          <br />
+
+          <h3 style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Machine Learning & AI:
+          </h3>
+          <p style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Machine Learning, Natural Language Processing (NLP), Feature
+            Engineering, Generative AI, Prompt Engineering
+          </p>
+
+          <br />
+          <br />
+
+          <h3 style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Libraries & Frameworks:
+          </h3>
+          <p style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Pandas, NumPy, Matplotlib, Scikit-learn, Flask, Flask
+          </p>
+
+          <br />
+          <br />
+
+          <h3 style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Databases:
+          </h3>
+          <p style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            MySQL, PostgreSQL, MongoDB
+          </p>
+
+          <br />
+          <br />
+
+          <h3 style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Tools & Platforms:{" "}
+          </h3>
+          <p style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Git, GitHub, Power BI, Excel, Jupyter Notebook, VS Code
+          </p>
+
+          <br />
+          <br />
+
+          <h3 style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Concepts:
+          </h3>
+          <p style={{ display: "inline", margin: 0, marginRight: "8px" }}>
+            Cloud Computing, Agile Methodology, Software Development Life Cycle
+            (SDLC), DBMS
           </p>
         </div>
 
-        <div class="soft-skills">
+        {/* <div class="soft-skills">
           <h1>
             <span class="span">Soft Skills</span> :
           </h1>
@@ -40,7 +95,7 @@ function Skills() {
             <br />
             Effective Communication
           </p>
-        </div>
+        </div> */}
       </div>
       <div class="certificate">
         <h3>Certifications</h3>
@@ -54,12 +109,13 @@ function Skills() {
               link: "https://drive.google.com/file/d/1gdkLY5JNFHbfdouUH4CSechsg2YbVHNI/view?usp=sharing",
             },
             {
-              title: "Complete Python Programming",
-              source: "Tutors Campus",
-              link: "https://drive.google.com/file/d/1UMRuwWENSFff6T8KJxi2BfgFEUBzAq4y/view?usp=sharing",
+              title:
+                "Apache Spark 3 for Data Engineering & Analytics with Python",
+              source: "Udemy",
+              link: "https://drive.google.com/file/d/1v90_mnFC8MpMgcyjYOkZxHoxwxwT37-H/view?usp=sharing",
             },
             {
-              title: "Structured Query Language - SQL",
+              title: "Advanced SQL",
               source: "HackerRank",
               link: "https://www.hackerrank.com/certificates/319c823b2c56",
             },
@@ -74,9 +130,19 @@ function Skills() {
               link: "https://www.cloudskillsboost.google/public_profiles/b9438a2c-2bf8-409f-8002-62c52c46c391/badges/8897104",
             },
             {
-              title: "Complete Web Development",
+              title: "Data warehouse ETL Testing & Data Quality Management A-Z",
               source: "Udemy",
-              link: "https://drive.google.com/file/d/1rd9mOXBxw_YDWI4LXcKdl0QIt6J1_qmq/view?usp=sharing",
+              link: "https://drive.google.com/file/d/1Jxkiqn8rwgpyNouJ8iMnoCmeiw10xIn5/view?usp=sharing",
+            },
+            {
+              title: "Relational Database Design",
+              source: "Udemy",
+              link: "https://drive.google.com/file/d/13rlVYKfEWrBrBQZ-dCoSGXD_PLJ2VkG4/view?usp=sharing",
+            },
+            {
+              title: "DataWarehouse - The Ultimate Guide",
+              source: "Udemy",
+              link: "https://drive.google.com/file/d/17qH-Uit40UcJNweAbgr4ZSJBJuI1817E/view?usp=sharing",
             },
           ].map((cert, index) => (
             <div key={index} className="cert-card">

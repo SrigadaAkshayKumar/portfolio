@@ -4,19 +4,19 @@
 :root {
   --primary-bg: linear-gradient(
     90deg,
-    #335ff1,
-    #621cd0
+    #030303e0,
+    #333333
   ); /* Soft blue background */
-  --text-color: #092256; /* Deep navy text */
-  --primary-color: #061b49; /* Darker blue for headings, accents */
-  --secondary-color: #052846; /* Medium blue */
+  --text-color: #ffffff; /* Deep navy text */
+  --primary-color: #bfc7d7; /* Darker blue for headings, accents */
+  --secondary-color: #ced7e0; /* Medium blue */
   --light-accent: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.112),
     rgba(255, 255, 255, 0.326)
   ); /* Lightest blue for subtle elements */
-  --button-color: #112d51df; /* Button background */
-  --hover-color: #072f51b9; /* Hover state */
+  --button-color: #3f6495df; /* Button background */
+  --hover-color: #7c96acb9; /* Hover state */
   --nav-hover: #092255; /* Navigation hover */
   --transition: 0.3s ease-in-out;
 }
@@ -449,7 +449,9 @@ button:hover,
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(1, 24, 216, 0.1);
   font-family: var(--font, "Poppins", sans-serif);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   color: var(--text-color);
 }
 
@@ -519,7 +521,9 @@ button:hover,
   box-shadow: 0 4px 15px rgba(1, 24, 216, 0.1);
   font-family: var(--font, "Poppins", sans-serif);
   color: var(--text-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   line-height: 1.6;
 }
 .certifications-container {
@@ -535,7 +539,9 @@ button:hover,
   width: 280px;
   background: var(--light-accent);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Hover Effect */
@@ -568,7 +574,7 @@ button:hover,
 }
 
 .experience1 {
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto 4rem;
   background: var(--light-accent);
   padding: 2rem 2.5rem;
@@ -576,7 +582,9 @@ button:hover,
   box-shadow: 0 4px 15px rgba(1, 24, 216, 0.1);
   font-family: var(--font, "Poppins", sans-serif);
   color: var(--text-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   line-height: 1.6;
 }
 
@@ -639,7 +647,9 @@ button:hover,
   box-shadow: 0 4px 15px rgba(1, 24, 216, 0.1);
   background: var(--light-accent);
   padding: 1.8rem 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
 }
 

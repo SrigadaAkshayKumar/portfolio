@@ -2,11 +2,11 @@ import React from "react";
 import profile from "./images/profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-  faLocationDot,
-  faPhone,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+// import {
+//   faLocationDot,
+//   faPhone,
+//   faEnvelope,
+// } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
   return (
@@ -14,15 +14,14 @@ function About() {
       <div className="About">
         <div className="para">
           <p className="parap" id="parap">
-            <span className="span1">I am S.Akshay kumar,</span>a passionate
-            programmer with a strong background in Python, data structures, and
-            databases. I enjoy working with data to solve real-world problems. I
-            have hands-on experience in data analysis, including cleaning data,
-            making charts, and finding useful insights using tools like Power BI
-            and SQL. I’m also enthusiastic about contributing to open-source
-            projects and collaborating with the developer community. Currently
-            looking for opportunities in data analysis, data science and data
-            Engineer Roles
+            <span className="span1">I am S. Akshay Kumar,</span> a Data
+            Engineering enthusiast with hands-on industry experience through my
+            internship at Cognizant, where I worked on Python, SQL, PySpark, ETL
+            concepts, Data Warehousing, and Data Modeling.I am passionate about
+            solving real-world problems using data and continuously expanding my
+            knowledge of modern data engineering technologies. Currently seeking
+            opportunities in Data Engineering roles where I can apply my
+            technical skills and contribute to building scalable data solutions.
           </p>
         </div>
         <div className="photo">
@@ -69,7 +68,7 @@ function About() {
             Malla Reddy Engineering college, Maisammaguda, medchal, Telangana,
             500049
           </p>
-          <p>Year : I am currently in my third year of studying engineering</p>
+          <p>Year of Completion : 2026</p>
           <p>CGPA : 8.55</p>
           <h3>Intermediate (12th Grade)</h3>
           <p>junior college, mallampet, Hyderabad, Telangana, 500090 </p>
@@ -79,29 +78,6 @@ function About() {
           <p>Abhyudaya Patashala, Domakonda, kamareddy, Telangana, 503123 </p>
           <p>Year of Completion : 2020</p>
           <p> CGPA : 10</p>
-        </div>
-      </div>
-      <div className="Add-cont">
-        <div className="contact">
-          <div>
-            <h1>
-              <span className="span">Contact</span> :
-            </h1>
-            <p>
-              <FontAwesomeIcon icon={faPhone} /> Phone : 9533384236
-              <br />
-              <FontAwesomeIcon icon={faEnvelope} /> Email :
-              srigadaakshay@gmail.com
-            </p>
-          </div>
-          <div className="icon1">
-            <a href="https://www.linkedin.com/in/akshayak8">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="https://github.com/SrigadaAkshayKumar">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </div>
         </div>
       </div>
     </div>
